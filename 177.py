@@ -1,0 +1,3 @@
+uiahehehehehehehehehehe=input()
+uiahehehehehehehehehehehe=uiahehehehehehehehehehe.upper()
+print(uiahehehehehehehehehehehe)
