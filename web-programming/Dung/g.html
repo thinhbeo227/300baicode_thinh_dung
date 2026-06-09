@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Text Animation</title>
+    <style>
+        h1 {
+            font-size: 72px;
+            font-weight: lighter;
+            border: dashed 5px rgb(63, 0, 0);
+            border-radius: 10px;
+
+            /* Gradient nhiều màu */
+            background: linear-gradient(
+                to right, 
+                #0004ff,   /* xanh dương */
+                #ff0000,   /* đỏ */
+                #00ff40,   /* xanh lá */
+                #ffffff,   /* trắng */
+                #080000,   /* đen */
+                #ff19b3,    /* hồng */
+            );
+            background-size: 400% 400%;
+
+            /* Gradient áp dụng cho chữ */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            /* Hiệu ứng chuyển động */
+            animation: gradientMove 8s ease infinite;
+        }
+
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Học lập trình web</h1>
+    <h1>ROBLOX STUDIO</h1>
+</body>
+</html>

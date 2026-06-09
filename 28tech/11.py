@@ -1,0 +1,5 @@
+N=int(input())
+print(N*2)
+print(N*10)
+print(N//2)
+print(f"{N/2:.3f}")

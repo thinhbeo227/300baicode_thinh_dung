@@ -1,0 +1,25 @@
+🚀 BÀI 1: Quản lý chi tiêu cá nhân
+🧾 Mô tả
+
+Người dùng nhập các khoản chi tiêu trong ngày, chương trình sẽ:
+
+Tính tổng tiền
+Phân loại chi tiêu (ăn uống, di chuyển, khác)
+📥 Input
+Nhập nhiều dòng, mỗi dòng dạng:
+<tên khoản chi> <số tiền>
+Nhập "q" để kết thúc
+📤 Output
+Tổng tiền đã tiêu
+% mỗi loại
+
+🧪 Ví dụ
+Input:
+an trua 50000
+xang 30000
+tra sua 40000
+q
+Output:
+Tong: 120000
+An uong: 75%
+Di chuyen: 25%

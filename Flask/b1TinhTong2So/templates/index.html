@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính tổng 2 số</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f2f2f2;
+        }
+        .box {
+            width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ccc;
+        }
+        input, button {
+            width: 100%;
+            margin-top: 10px;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>Tính tổng 2 số</h2>
+        <form method="post">
+            <input type="number" name="a" placeholder="Nhập số a" required>
+            <input type="number" name="b" placeholder="Nhập số b" required>
+            <input type="text" name="ds" placeholder="nhzap danh sach item" required>
+            <button type="submit">Tính</button>
+        </form>
+
+        {% if tong is not none %}
+            <h3>Kết quả: {{ tong }}</h3>
+        {% endif %}
+
+        <h3> {{hoaqua}} </h3>
+        <ol>
+            {% for hoaqua in hoaqua %}
+                <li>{{hoaqua}}</li>
+            {% endfor %}
+        </ol>
+        <hr>
+        <ol>
+            <li>dung</li>
+            <li>thinh</li>
+            <li>an</li>
+        </ol>
+        <hr>
+        Tong = {{kq_tong}}
+        <hr>
+        game={{game}}
+    </div>
+</body>
+</html>
+
+<!-- trộn html + python -->
+<!-- Flask: Framework của python -->

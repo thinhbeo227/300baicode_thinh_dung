@@ -1,0 +1,69 @@
+app.py : server
+
+
+server: Nơi xử lý logic (Máy chủ)
+client: giao diện sử dụng, game mình chơi (máy khách)
+
+ping: 100ms mili s
+
+server
+|               châu âu
+chấu á
+
+
+click client --> server (time chuẩn)
+            <---
+execute
+
+
+time chuẩn 
+
+cái vấn đề là chỉ có mình bị lag
+
+
+~ < 40ms
+
+trong trường hợp cửa mình
+thì ta đang chạy đồng thời client & server ở trên máy tính
+
+
+server + client (chạy đồng thời trên máy tính của mình)
+
+mua 1tr: 1gb
+
+máy tính cùi: 100mb
+
+
+
+ctrl + p: note.txt 
+
+
+câu hỏi: ---------------------------------------------------------------
+- Tạo 1 list như sau ở trên server (app.py)
+
+items = ["Táo", "Cam", "Chuối"]
+
+
+- Load dữ liệu từ server --> client (index.html)
+<ul>
+{% for item in items %}
+    <li>{{ item }}</li>
+{% endfor %}
+</ul>
+
+
+câu hỏi: ---------------------------------------------------------------
+có thể gửi đồng thời nhiều thứ từ client --> server k?
+làm thế nào
+
+
+câu hỏi: ---------------------------------------------------------------
+tạo 1 ô input
+
+
+s = none
+for ...
+    if i % 2 == 0:
+        s = i 
+        break
+print(s)

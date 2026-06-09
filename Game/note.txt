@@ -1,0 +1,28 @@
+Lam 1 game doan so
+
+may tinh se random ra 1 so (4) bi mat
+
+nguoi dung se chon 1 so ngau nhien 1->10
+may tinh se tra loi 2 cau
+
+vd: 9 - be hon
+vd: 3 - lon hon
+vd: 4 --> chinh ban da chon chinh xac so
+may man (x) sau (dem) lan
+
+
+========================================
+
+while True:
+    nguoi  dung input 
+    if input > hon
+
+    elif ...
+    else:
+        print(win)
+        print(dem)
+        break
+
+
+
+vui long chon 1 so ngau nhien

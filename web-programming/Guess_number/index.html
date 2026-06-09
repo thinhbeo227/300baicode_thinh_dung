@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1 id="hehe">Clone trò chơi đoán số</h1>
+    <h2>Dũng làm</h2>
+    <hr>
+    <h1>GAME DOAN SO</h1>
+    <p>BAN CON 6 LUOT</p>
+    <input id="userInput" type="number" placeholder="Enter number">
+    <button onclick="doan_so()">DOAN</button>
+    <div id="ketQua">Ket qua: Ban da thang</div>
+    <footer>
+        "🎮made by"
+        <span>Tong Quang tri Dung</span>
+        " | © 2026 | No Copy 🚫 "
+    </footer>
+    <script>
+        let x = Math.floor(Math.random() * 100) + 1;
+        console.log("so bi mat: " + x);
+
+        function doan_so() {
+            let doan = document.getElementById("userInput").value;
+            doan = Number(doan);
+
+            if (doan === x) {
+                console.log("Ban da thang");
+            } else if (doan > x) {
+                console.log("To hon");
+            } else {
+                console.log("Be hon");
+            }
+        }
+    </script>
+</body>
+
+</html>

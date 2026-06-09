@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chao Ban</title>
+</head>
+
+<body>
+
+    <h1>TEN BAN LA GI</h1>
+    <input type="text" id="ten" placeholder="nhap ten vao:">
+    <button onclick="chao()">send</button>
+    <div id="ketqua"></div>
+    <script>
+        function chao() {
+            let ten = document.getElementById("ten").value;
+            if (ten.trim() === "") {
+                document.getElementById("ketqua").innerText = "Bạn chưa nhập tên!"
+                return;
+            }
+            document.getElementById("ketqua").innerText = "Xin Chao " + ten;
+            // xoa trang noi dung the input
+            document.getElementById("ten").value = "";
+        }
+    </script>
+</body>
+
+</html>
