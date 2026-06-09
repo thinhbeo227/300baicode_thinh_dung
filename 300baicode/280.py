@@ -35,5 +35,3 @@ if __name__ == "__main__":
 
     for hs in ds:
         print(hs)
-
-

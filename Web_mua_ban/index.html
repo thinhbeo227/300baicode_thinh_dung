@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tai Nghe AirSound Pro</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        header p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 35px;
+            background: #ffcc00;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* Features */
+        .features {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 60px 20px;
+        }
+
+        .card {
+            background: white;
+            width: 300px;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h3 {
+            margin: 15px 0;
+        }
+
+        /* Product */
+        .product {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .product img {
+            width: 300px;
+            max-width: 100%;
+        }
+
+        .price {
+            font-size: 40px;
+            color: red;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .review {
+            max-width: 700px;
+            margin: 20px auto;
+            font-style: italic;
+        }
+
+        /* Footer */
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .admin-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #111827;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .admin-btn:hover {
+            background: #374151;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>AirSound Pro</h1>
+        <p>Tai nghe không dây thế hệ mới - Âm thanh đỉnh cao</p>
+        <a href="#order" class="btn">Mua Ngay</a>
+    </header>
+    <a href="admin.html" class="admin-btn">Admin</a>
+
+    <section class="features">
+        <div class="card">
+            <h3>🔋 Pin 48 giờ</h3>
+            <p>Sử dụng liên tục nhiều ngày mà không cần sạc.</p>
+        </div>
+
+        <div class="card">
+            <h3>🎵 Âm thanh Hi-Fi</h3>
+            <p>Chất lượng âm thanh sống động, bass mạnh mẽ.</p>
+        </div>
+
+        <div class="card">
+            <h3>📶 Bluetooth 5.3</h3>
+            <p>Kết nối nhanh, ổn định và tiết kiệm pin.</p>
+        </div>
+    </section>
+
+    <section class="product">
+        <img src="./tainghe.png" alt="Tai nghe">
+        <h2>Ưu đãi đặc biệt hôm nay</h2>
+        <div class="price">699.000đ</div>
+        <a href="dathat.html " class="btn">Đặt Hàng Ngay</a>
+    </section>
+
+    <section class="testimonials">
+        <h2>Khách hàng nói gì?</h2>
+
+        <div class="review">
+            ⭐⭐⭐⭐⭐ "Âm thanh rất hay, pin cực trâu!"
+        </div>
+
+        <div class="review">
+            ⭐⭐⭐⭐⭐ "Đeo thoải mái cả ngày, đáng tiền."
+        </div>
+    </section>
+
+    <footer id="order">
+        <h2>Liên hệ đặt hàng</h2>
+        <p>📞 0123 456 789</p>
+        <p>📧 contact@example.com</p>
+    </footer>
+
+</body>
+
+</html>

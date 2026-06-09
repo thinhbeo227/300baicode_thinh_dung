@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt Hàng</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f4f4;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 600px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #4f46e5;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        textarea {
+            resize: none;
+            height: 100px;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 20px;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            background: #4f46e5;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #4338ca;
+        }
+
+        .back {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            text-decoration: none;
+            color: #4f46e5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <form id="orderForm">
+            <label>Họ và tên</label>
+            <input type="text" id="ten" required>
+
+            <label>Số điện thoại</label>
+            <input type="tel" id="sdt" required>
+
+            <label>Địa chỉ giao hàng</label>
+            <textarea id="diachi" required></textarea>
+
+            <label>Số lượng</label>
+            <select id="soluong">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+
+            <button type="submit">Xác Nhận Đặt Hàng</button>
+        </form>
+    </div>
+
+
+    <script>
+        document.getElementById("orderForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            let donHang = {
+                ten: document.getElementById("ten").value,
+                sdt: document.getElementById("sdt").value,
+                diachi: document.getElementById("diachi").value,
+                soluong: document.getElementById("soluong").value,
+                thoigian: new Date().toLocaleString()
+            };
+
+            let ds = JSON.parse(localStorage.getItem("donhang")) || [];
+
+            ds.push(donHang);
+
+            localStorage.setItem("donhang", JSON.stringify(ds));
+
+            alert("Đặt hàng thành công!");
+
+            this.reset();
+        });
+    </script>
+</body>
+
+</html>
